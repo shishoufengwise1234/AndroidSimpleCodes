@@ -28,4 +28,27 @@ class HomeFragment : Fragment() {
         })
         return root
     }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+//        val retrofit = Retrofit.Builder()
+//            .baseUrl("")
+//            .build()
+//
+//        val apiService = retrofit.create(APIService::class.java)
+//
+//        val call = apiService.getUser()
+//
+//        call.enqueue(object :Callback<String>{
+//            override fun onFailure(call: Call<String>, t: Throwable) {
+//                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//            }
+//
+//            override fun onResponse(call: Call<String>, response: Response<String>) {
+//                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//            }
+//        })
+
+    }
 }
