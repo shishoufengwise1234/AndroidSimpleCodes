@@ -20,5 +20,7 @@ class MyTestViewActivity : AppCompatActivity(){
         setContentView(R.layout.activity_my_test_view)
 
 
+
+
     }
 }
