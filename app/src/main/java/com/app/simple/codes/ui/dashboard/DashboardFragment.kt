@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.app.simple.codes.R
 import com.app.simple.codes.activity.MyTestViewActivity
+import com.app.simple.codes.activity.RxJavaActivity
 import com.app.simple.codes.adapter.DashboardListAdapter
 import com.app.simple.codes.constants.Dashboard
 import com.app.simple.codes.inter.OnItemPairCallBackListener
@@ -69,6 +70,9 @@ class DashboardFragment : Fragment(), OnItemPairCallBackListener<Int, String> {
             // test view
             Dashboard.DASH_TYPE_1->{
                 intent.setClass(activity!!,MyTestViewActivity::class.java)
+            }
+            Dashboard.DASH_TYPE_2->{
+               intent.setClass(activity!!,RxJavaActivity::class.java)
             }
         }
 
