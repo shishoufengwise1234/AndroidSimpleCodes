@@ -17,5 +17,8 @@ public class EventBusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
+
+
+
     }
 }
