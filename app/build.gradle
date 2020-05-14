@@ -4,6 +4,25 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.lifecycle.plugin'
+buildscript {
+
+    repositories {
+
+        google()
+        jcenter()
+
+        maven {
+            url '../asm_lifecycle_repo'
+        }
+    }
+
+    dependencies {
+
+        classpath 'cn.asm_lefecycle.plugin:asm_lifecycle_plugin:1.0.6'
+    }
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
@@ -57,3 +76,4 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
 
 }
+
