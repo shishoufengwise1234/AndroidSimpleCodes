@@ -1,0 +1,29 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.tools.build:gradle:3.5.3'
+
+    implementation gradleApi()
+    implementation localGroovy()
+
+    implementation 'org.ow2.asm:asm:8.0.1'
+    implementation 'org.ow2.asm:asm-commons:8.0.1'
+
+}
+
+group = 'cn.asm_lefecycle.plugin'
+version = '1.0.6'
+
+uploadArchives{
+
+    repositories{
+        mavenDeployer{
+            repository(url:uri('../asm_lifecycle_repo'))
+        }
+    }
+}

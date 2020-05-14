@@ -28,6 +28,12 @@
         <activity
             android:name=".activity.RxJavaActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EventBusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TouchActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
