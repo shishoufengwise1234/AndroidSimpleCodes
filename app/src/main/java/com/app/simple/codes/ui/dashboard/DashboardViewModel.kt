@@ -10,7 +10,11 @@ class DashboardViewModel : ViewModel() {
     private val _ListPair = MutableLiveData<List<Pair<Int,String>>>().apply {
 
         value = listOf(Pair(Dashboard.DASH_TYPE_1,"MyTestView"),
-            Pair(Dashboard.DASH_TYPE_2,"RxJava"))
+            Pair(Dashboard.DASH_TYPE_2,"RxJava"),
+            Pair(Dashboard.DASH_TYPE_3,"ClassLoader"),
+            Pair(Dashboard.DASH_TYPE_4,"Simple Hotfix"),
+            Pair(Dashboard.DASH_TYPE_5,"DashLineActivity")
+            )
     }
 
 
