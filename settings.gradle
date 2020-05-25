@@ -1,2 +1,2 @@
-include ':app',':asm_lifecycle_plugin'
+include ':app',':asm_lifecycle_plugin', ':hotfix'
 rootProject.name='AndroidSimpleCodes'

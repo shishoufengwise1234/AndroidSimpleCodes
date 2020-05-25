@@ -10,10 +10,13 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.app.simple.codes.R
+import com.app.simple.codes.activity.ClassLoaderActivity
+import com.app.simple.codes.activity.DashLineActivity
 import com.app.simple.codes.activity.MyTestViewActivity
 import com.app.simple.codes.activity.RxJavaActivity
 import com.app.simple.codes.adapter.DashboardListAdapter
 import com.app.simple.codes.constants.Dashboard
+import com.app.simple.codes.hotfix.HotFixActivity
 import com.app.simple.codes.inter.OnItemPairCallBackListener
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
@@ -63,7 +66,7 @@ class DashboardFragment : Fragment(), OnItemPairCallBackListener<Int, String> {
 
     override fun onItemClick(pair: Pair<Int, String>) {
 
-        var intent = Intent()
+        val intent = Intent()
 
         when(pair.first){
 
@@ -74,6 +77,16 @@ class DashboardFragment : Fragment(), OnItemPairCallBackListener<Int, String> {
             Dashboard.DASH_TYPE_2->{
                intent.setClass(activity!!,RxJavaActivity::class.java)
             }
+            Dashboard.DASH_TYPE_3->{
+                intent.setClass(activity!!,ClassLoaderActivity::class.java)
+            }
+            Dashboard.DASH_TYPE_4->{
+                intent.setClass(activity!!,HotFixActivity::class.java)
+            }
+            Dashboard.DASH_TYPE_5->{
+                intent.setClass(activity!!,DashLineActivity::class.java)
+            }
+
         }
 
         startActivity(intent)
