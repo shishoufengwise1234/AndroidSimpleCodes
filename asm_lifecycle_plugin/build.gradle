@@ -1,3 +1,4 @@
+//依赖 groovy 和 maven 插件
 apply plugin: 'groovy'
 apply plugin: 'maven'
 
@@ -8,17 +9,23 @@ dependencies {
 
     implementation 'com.android.tools.build:gradle:3.5.3'
 
+    //依赖 gradle Api仓库
     implementation gradleApi()
+    // 依赖 groovy本地仓库
     implementation localGroovy()
 
+    //依赖 ASM库文件
     implementation 'org.ow2.asm:asm:8.0.1'
     implementation 'org.ow2.asm:asm-commons:8.0.1'
 
 }
 
+// maven仓库group名称
 group = 'cn.asm_lefecycle.plugin'
-version = '1.0.6'
+// maven仓库插件版本号
+version = '1.0.7'
 
+//maven 仓库发布
 uploadArchives{
 
     repositories{
