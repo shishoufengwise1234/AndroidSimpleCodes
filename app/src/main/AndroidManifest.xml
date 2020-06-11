@@ -56,7 +56,9 @@
         </activity>
         <activity android:name=".activity.task.SoundActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:process=":showBitmap"/>
+
         <activity android:name=".precess.ProcessTestActivity"
             android:process=":simple_process"/>
     </application>
