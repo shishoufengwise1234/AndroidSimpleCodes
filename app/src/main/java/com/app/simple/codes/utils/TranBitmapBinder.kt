@@ -1,5 +1,7 @@
 package com.app.simple.codes.utils
 
+import android.graphics.Bitmap
+import android.os.Binder
 import android.os.IBinder
 import android.os.IInterface
 import android.os.Parcel
@@ -67,5 +69,10 @@ class TranBitmapBinder : IBinder{
 
         return false
     }
+}
+
+class BitmapBinder : Binder(){
+
+    lateinit var bitmap : Bitmap
 
 }
