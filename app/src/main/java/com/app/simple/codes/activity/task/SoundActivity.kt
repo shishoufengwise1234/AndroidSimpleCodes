@@ -22,12 +22,12 @@ class SoundActivity :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_task_sound)
 
-        val bundle = intent.extras?.getBundle("data")
-        val binder = bundle?.getBinder("big_bitmap")
-
-        P.outI(" binder = $binder")
-
-        img_tran.setImageBitmap((binder as BitmapBinder).bitmap)
+//        val bundle = intent.extras?.getBundle("data")
+//        val binder = bundle?.getBinder("big_bitmap")
+//
+//        P.outI(" binder = $binder")
+//
+//        img_tran.setImageBitmap((binder as BitmapBinder).bitmap)
 
     }
 
