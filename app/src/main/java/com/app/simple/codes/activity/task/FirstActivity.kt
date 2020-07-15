@@ -4,10 +4,12 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.app.simple.codes.R
 import com.app.simple.codes.precess.ProcessTestActivity
 import com.app.simple.codes.utils.BitmapBinder
+import com.app.simple.codes.utils.LayoutUtils
 import com.app.simple.codes.utils.P
 import com.app.simple.codes.utils.TranBitmapBinder
 import kotlinx.android.synthetic.main.activity_task_first.*
@@ -52,5 +54,13 @@ class FirstActivity:AppCompatActivity(){
             val intent = Intent(this,ProcessTestActivity::class.java)
             startActivity(intent)
         }
+
+
+
+        Handler().postDelayed({
+            LayoutUtils.printAllViewLayout(ll_first_content)
+        },3000)
+
+
     }
 }
