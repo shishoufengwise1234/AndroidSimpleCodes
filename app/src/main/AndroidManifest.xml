@@ -59,8 +59,8 @@
             android:screenOrientation="portrait"
             />
 
-        <activity android:name=".precess.ProcessTestActivity"
-            android:process=":simple_process"/>
+        <activity android:name=".precess.ProcessTestActivity" />
+        <activity android:name=".activity.ANRTestActivity" />
     </application>
 
 </manifest>
