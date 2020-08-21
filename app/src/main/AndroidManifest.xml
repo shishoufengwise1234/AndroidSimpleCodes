@@ -47,11 +47,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".activity.task.FirstActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity android:name=".activity.task.SoundActivity"
@@ -61,6 +57,30 @@
 
         <activity android:name=".precess.ProcessTestActivity" />
         <activity android:name=".activity.ANRTestActivity" />
+
+
+        <activity android:name=".activity.ExpandTextViewActivity">
+
+        </activity>
+
+        <activity android:name=".activity.ExpandableTextView2Activity">
+
+        </activity>
+        <activity android:name=".activity.ActivityListView"/>
+
+        <activity android:name=".activity.ScrollActivity">
+
+        </activity>
+        <activity android:name=".activity.TextViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SpanTextViewActivity">
+
+        </activity>
     </application>
 
 </manifest>

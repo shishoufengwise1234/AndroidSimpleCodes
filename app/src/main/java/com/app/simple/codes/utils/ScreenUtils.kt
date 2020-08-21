@@ -24,5 +24,15 @@ class ScreenUtils {
             )
         }
 
+        fun sp2px(spValue: Float): Int {
+            return TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_SP,
+                spValue,
+                Resources.getSystem().displayMetrics
+            ).toInt()
+        }
+
+        val Resource = Resources.getSystem()
+
     }
 }
