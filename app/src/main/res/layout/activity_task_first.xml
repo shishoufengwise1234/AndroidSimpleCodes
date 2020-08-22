@@ -16,4 +16,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="跳转 新进程中的 Activity" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jump_process_test"
+        android:text="跳转 Process Test 页面"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jump_touch_test"
+        android:text="跳转 Touch Test 页面"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jump_anr_test"
+        android:text="跳转 anr Test 页面"/>
+
+
 </LinearLayout>

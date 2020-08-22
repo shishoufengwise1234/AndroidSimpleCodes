@@ -4,7 +4,11 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-apply plugin: 'com.lifecycle.plugin'
+//apply plugin: 'com.lifecycle.plugin'
+
+
+
+
 buildscript {
 
     repositories {
@@ -25,7 +29,7 @@ buildscript {
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.1"
+    buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.app.simple.codes"
         minSdkVersion 19
@@ -73,6 +77,19 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'com.squareup.retrofit2:retrofit:2.8.1'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
+
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.4'
+
+    //x2c
+    annotationProcessor 'com.zhangyue.we:x2c-apt:1.1.2'
+    implementation 'com.zhangyue.we:x2c-lib:1.0.6'
+
+    //blockcanary
+    implementation 'com.github.markzhai:blockcanary-android:1.5.0'
+
+    implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
+
+    implementation 'com.tencent:mmkv-static:1.2.1'
 
 }
 
