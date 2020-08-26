@@ -7,5 +7,9 @@
         <attr name="line_width" format="dimension" />
     </declare-styleable>
 
+    <declare-styleable name="MaxWeightLayout_Layout">
+        <attr name="layout_max_weight" format="integer" />
+    </declare-styleable>
+
 
 </resources>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -25,5 +27,71 @@
         android:background="@android:color/holo_orange_light"
         android:textSize="16sp"
         android:textStyle="bold" />
+
+
+    <com.app.simple.codes.view.MaxWeightLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_max_weight="1"
+            tools:text="拉勾网·高级产品经理拉勾网高级" />
+
+        <TextView
+            android:id="@+id/tv_position_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_max_weight="1"
+            tools:text="拉勾网·高级产品经理拉勾网高级产品拉勾网·高级产品经理拉勾网高级产品拉勾网·高级产品经理拉勾网高级产品" />
+
+    </com.app.simple.codes.view.MaxWeightLayout>
+
+
+    <com.app.simple.codes.view.WeightTextViewLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_max_weight="1"
+            tools:text="拉勾网·高级产品经理拉勾网高级" />
+
+        <TextView
+            android:id="@+id/tv_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_max_weight="1"
+            tools:text="拉勾网·高级产品经理拉勾网高级产品拉勾网·高级产品经理拉勾网高级产品拉勾网·高级产品经理拉勾网高级产品" />
+
+    </com.app.simple.codes.view.WeightTextViewLayout>
 
 </LinearLayout>
