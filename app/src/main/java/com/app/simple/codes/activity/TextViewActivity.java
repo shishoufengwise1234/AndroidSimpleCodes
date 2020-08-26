@@ -19,6 +19,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.app.simple.codes.R;
 import com.app.simple.codes.utils.AlignTopImageSpan;
@@ -38,7 +39,7 @@ public class TextViewActivity extends AppCompatActivity {
 
 
 //    String showText = ".监控滴滴代驾各项业务数据，解读异常指标，指导改进业务短板，提升业务体验参与线上，线下用户体验调研，提供高质量原型等设计方案和相关文档分析、解构产品，优化功能，提升用户体验，制定交互设计规范；";
-    String showText = ".监控滴滴代驾各项业务数据，解读异常指标异常指";
+    String showText = ".监控滴滴代驾各项业务数据，解读异常指标异常指常指标异常指";
 
     Context mContext;
     TextView tvText;
@@ -57,10 +58,41 @@ public class TextViewActivity extends AppCompatActivity {
 
 //        testPaddingText();
 
-        setExpandableTextView();
+//        setExpandableTextView();
+
+
+        setMaxWeightLayoutText();
+    }
+
+    private void setMaxWeightLayoutText() {
+
+        String text1 = "监控监控监监控监控监监控监控监监控监控监监控监控监监控监控监";
+        String text2 = "·高级开";
+
+        TextView tvCompanyName = findViewById(R.id.tv_company_name);
+        TextView tvText2 = findViewById(R.id.tv_position_name);
+
+        tvCompanyName.setText(text1);
+        tvText2.setText(text2);
+
+
+        TextView tv1 = findViewById(R.id.tv_text_1);
+        TextView tv2 = findViewById(R.id.tv_text_2);
+
+        tv1.setText(text1);
+        tv2.setText(text2);
+
+
+        for (int i = 0; i < 10; i++) {
+            Fragment f = new Fragment();
+            Log.d(TAG, "setMaxWeightLayoutText: f" + f + " this " + this);
+        }
+
+
 
 
     }
+
 
     private void testPaddingText() {
 
@@ -107,7 +139,7 @@ public class TextViewActivity extends AppCompatActivity {
                     int start = layout.getLineStart(lastLineIndex);
                     String lastLineText = text.substring(start, end); //最后一行的内容
 
-                    if (text.contains(lastLineText)){
+                    if (spanStr.contains(lastLineText)){
                         StringBuilder sb = new StringBuilder(text);
                         text = sb.insert(Math.max(0, sb.length() - spanStr.length() - 1), "\n").toString();
 
